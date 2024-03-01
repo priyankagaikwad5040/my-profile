@@ -7,7 +7,16 @@
     <link rel="shortcut icon" href="assets/dev.png" type="image/x-icon">
     <!-- CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+   <style>
+      *{
+        box-sizing: border-box;
+      }
       header{
         padding: 20px;
         background-color: rgb(216, 244, 245);
@@ -16,9 +25,11 @@
         text-decoration: none;
         margin: 10px 20px;
         margin-top: 50px;
+        font-family: roboto;
       }
       #listi{
         padding: 10px 20px;
+        font-family: poppins;
       }
       #resume{
         color: orange;
@@ -38,9 +49,8 @@
       #footericon{
         padding: 20px;
       }
-      th{
-        padding: 5px ;
-      }
+      
+      
       td{
         padding: 5px;
         padding-left: 30px;
@@ -48,6 +58,17 @@
       }
       .roles{
         padding: 10px;
+      }
+
+      table, tr, th, td {
+        border: 2px solid rgb(216, 186, 131);
+        border-collapse: collapse;
+      }
+      td,th{
+        padding: 10px;
+      }
+      #techs{
+        width: 50%;
       }
     </style></head>
   <body>
@@ -94,7 +115,7 @@
       <section id="techStack">
         <!-- Technology Stack Section -->
         <h2 class="heading">My Technology stack is</h2>
-        <table border="1">
+        <table id="techs" >
           <thead> 
             <tr>
               <th>Sr.No.</th>
@@ -164,7 +185,7 @@
       <hr>
       <section id="education">
         <h2 class="heading">Education Details</h2>
-        <table border="1">
+        <table >
           <thead> 
             <tr>
               <th>Qualification</th>
