@@ -8,6 +8,30 @@
       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   
 </head>
+<style>
+  label, button{
+            font-size: large;
+            color: cadetblue;
+        }
+        input[type="text"],input[type="email"]{
+            border: 2px solid rgb(248, 181, 57);
+            padding: 5px 5px ;
+            border-radius: 8px;
+            width: 250px;
+            text-transform: capitalize;
+            color: cadetblue;
+        }
+        input[type="email"]{
+          text-transform: lowercase;
+        }
+        button[type="submit"]:hover{
+            color: rgb(183, 122, 8);
+            border-radius: 8px;
+            border: 2px solid rgb(248, 181, 57);
+        }
+
+        
+</style>
 <body> <h2>You can follow me on</h2>
    Instagram <a id="footericon" href="https://www.instagram.com/priyanka.tribhuwan/?igsh=MTdhdWl5N2I5cmp3bA%3D%3D" target="_blank">
     <i class="fa fa-instagram fa-lg" aria-hidden="true" style="margin: 5px;"></i>
@@ -20,6 +44,28 @@
   <a id="footericon" href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQFk4B_I88UYgQAAAY3k9gGA-RKk_0TFiCwGsdXfzw_4Cl-SdSeTwCVED6KryYZ25FDZzPSvZmKsetFewzJBZUbOhLs34dP1Z8qQzqROXqg7ljo-mOhmhLE0LzHGRSFbZAS5kBg=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fpriyanka-gaikwad-293244294%3Futm_source%3Dshare%26utm_campaign%3Dshare_via%26utm_content%3Dprofile%26utm_medium%3Dandroid_app" target="_blank">
           <i class="fa fa-linkedin-square fa-lg" aria-hidden="true" style="margin: 5px;"></i>
       </a>
-  
+      <h2>Contact Me</h2>
+      <form action="">
+          <table>
+              <tbody>
+                  <tr>
+                      <td><label for="">Full Name </label></td>
+                      <td><input type="text"> <br></td>
+                  </tr>
+                  <tr>
+                      <td><label for="">Email </label> </td>
+                      <td><input type="email"></td>
+                  </tr>
+                  <tr>
+                      <td><label for="">Question</label></td>
+                      <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+                  </tr>
+                  <tr>
+                      <td> <button type="submit">Send Question</button> </td>
+                      <td> <button type="reset">Clear Info</button></td>
+                  </tr>
+              </tbody>
+          </table>
+      </form>
 </body>
 </html>

@@ -31,6 +31,9 @@
         padding: 10px 20px;
         font-family: poppins;
       }
+      #listi li{
+        list-style-type: square;
+      }
       #resume{
         color: orange;
         font-weight: bolder;
@@ -58,7 +61,10 @@
       }
       .roles{
         padding: 10px;
+        list-style-type: lower-alpha;
+        
       }
+      
 
       table, tr, th, td {
         border: 2px solid rgb(216, 186, 131);
@@ -69,6 +75,15 @@
       }
       #techs{
         width: 50%;
+      }
+      #Desc::selection{
+        background-color: azure;
+      }
+      #listi li{
+        list-style-type: none;
+      }
+      #listi li::marker{
+        content: "✍️";
       }
     </style></head>
   <body>
@@ -163,7 +178,7 @@
       <P>
            <STRong>Team Size:</STRong>06  <strong>Duration:</strong> 2021-1<sup>st</sup> <i>July till <u>present</u></i>
       </P>
-      <p>
+      <p id="Desc">
           <strong> Project Description :</strong> This project is mainly usd for student management in colleges ,where it helps to manage stuent record like <br>
           student registration ,student update ,and to see all the list of activities like score card and attendance
   
@@ -172,7 +187,7 @@
       <h2>
           Roles and Responsibilities
       </h2>
-      <ul>
+      <ol>
           <li class="roles">Designed and Implemented the user interface using HTML5 and CSS3</li>
           <li class="roles">Work closely with backend developers for code integration</li>
           <li class="roles">Identifying and troubleshooting issues in front end codebase</li>
@@ -180,7 +195,7 @@
           <li class="roles">Used JIRA for bug tacking</li>
           <li class="roles">Implemented project using Agile SCRUM methodology,involved in daily stand up calls,sprint retrospective meetings</li>
           <li class="roles">Involved in fixing technical issues in production environment</li>
-      </ul>
+      </ol>
    </section>
       <hr>
       <section id="education">
