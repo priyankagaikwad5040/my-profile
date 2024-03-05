@@ -5,22 +5,39 @@
 *{
   margin: 0;
   box-sizing: border-box;
-  list-style-type: none;
+  list-style-type: "\231B";
 }
       header{
         padding: 7px;
         background-color: rgb(10, 11, 11);
         color: white;
+        position: sticky;
+        width: 10000px;
+        z-index: 1;
+        position: fixed;
       }
+
 
       /* Navigation Section */
 #navSection{
+  position: sticky;
   padding: 10px;
   text-align: right;
+  top :30px;
+  z-index: 1;
+  /* background-image: url(assets/background.avif); */
+  background-color: blanchedalmond;
+  
+  
+  
 }
 #navSection li{
   display: inline;
   margin-right: 40px;
+  
+  ul{
+    list-style-type: "\231B";
+  }
 }
 #navSection a{
   text-decoration: none;
@@ -45,7 +62,8 @@
         font-family: poppins;
       }
       #listi li{
-        list-style-type: square;
+        /* list-style-type: square; */
+        list-style-type: "\231B";
       }
       #resume{
         color: orange;
@@ -54,6 +72,7 @@
       .heading{
         color: cadetblue;
         font-style: italic;
+        padding-top: 6px;
       }
       .header-info{
         margin-right: 40px;
@@ -64,8 +83,22 @@
       }
       #footericon{
         padding: 20px;
+        
       }
-      
+      #social{
+        margin-left: 200px;
+      }
+      #chat{
+       position : sticky;
+            padding: 10px 10px 0px 10px;
+            bottom: 0;
+            margin-left: 1200px;
+            
+            
+            /* background: green; */
+          
+        }
+      }
       
       td{
         padding: 5px;
@@ -92,10 +125,5 @@
       #Desc::selection{
         background-color: azure;
       }
-      #listi li{
-        list-style-type: none;
-      }
-      #listi li::marker{
-        content: "✍️";
-      }
-    
+      
+      
