@@ -47,7 +47,7 @@
      transition: 0.3s;
      border-radius: 5px;
      box-sizing:border-box; 
-     display:flexbox;
+     display: inline-block;
      /* background-color: rgb(119, 114, 114); */
      background-image: url(assets/backgroundstock.jpg);
      font-family: "Playfair Display", serif;
@@ -55,11 +55,13 @@
      font-weight:lighter;
      text-align: center;
    align-content:flex-start;
-   margin-left: 10%;
+   margin-left: 50%;
+   margin-right: 10%;
    /* padding: 5px; */
    color: bisque;
-   padding-right: 1px;
-   padding-left: 1px;
+   padding-right: 20px;
+   padding-left: 20px;
+   
 
   }
   
